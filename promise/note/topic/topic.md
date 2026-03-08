@@ -26,23 +26,25 @@
 * Code readability issues
 * Maintainability problems
 
----
-
-# 2. Why Promises Were Introduced
-
-### 2.1 Limitations of Callbacks
+### 1.4 Limitations of Callbacks
 
 * Inversion of control
 * Multiple callback issues
 * Hard error propagation
 
-### 2.2 Goals of Promises
+
+---
+
+# 2. Why Promises Were Introduced
+
+
+### 2.1 Goals of Promises
 
 * Better async flow control
 * Improved error handling
 * Composability
 
-### 2.3 Conceptual Idea of a Promise
+### 2.2 Conceptual Idea of a Promise
 
 * Representation of a future value
 * Placeholder for asynchronous result

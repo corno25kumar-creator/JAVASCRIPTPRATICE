@@ -182,7 +182,7 @@ function getUserFromServer(userId, callback) {
     // pretend this data came from a server
     const user = {
       id: userId,
-      name: "Chandan",
+      name: "sam",
       role: "Developer"
     };
 
@@ -202,7 +202,7 @@ getUserFromServer(1, function(user) {
 ```
 Fetching user from server...
   ⏳ (2 seconds pass)
-Got the user: Chandan
+Got the user: sam
 Their role: Developer
 ```
 
@@ -241,7 +241,7 @@ function loginUser(username, password, callback) {
 
 
 // Test 1: Wrong password
-loginUser("Chandan", "wrong123", function(err, user) {
+loginUser("sam", "wrong123", function(err, user) {
   if (err) {
     console.log("Login failed:", err);
   } else {
@@ -250,7 +250,7 @@ loginUser("Chandan", "wrong123", function(err, user) {
 });
 
 // Test 2: Correct password
-loginUser("Chandan", "mypassword", function(err, user) {
+loginUser("sam", "mypassword", function(err, user) {
   if (err) {
     console.log("Login failed:", err);
   } else {
@@ -263,7 +263,7 @@ loginUser("Chandan", "mypassword", function(err, user) {
 **Output:**
 ```
 Login failed: Invalid password!
-Welcome, Chandan
+Welcome, sam
 Your token: abc123
 ```
 
