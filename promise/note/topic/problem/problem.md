@@ -41,6 +41,8 @@ doSomething(sayHello); // → "Hello!"
 
 **That function you passed in? That's a callback.**
 
+<img width="1233" height="683" alt="image" src="https://github.com/user-attachments/assets/d1430e96-0de5-433f-9112-528676ec3642" />
+
 ---
 
 ## The Simple Callback
@@ -75,6 +77,9 @@ wave()  // ← calling it immediately (wrong here ❌)
 
 ## Okay But... Why Do We Need This?
 
+<img width="1225" height="677" alt="image" src="https://github.com/user-attachments/assets/8fda62fb-35d0-4eeb-bc78-1b2fd33d2032" />
+
+
 Let's talk about the real world problem callbacks solve.
 
 ### JavaScript Has a Big Limitation
@@ -105,6 +110,9 @@ JavaScript works like the **smart chef**. Callbacks are the smart chef's way of 
 ---
 
 ## Seeing the Problem Without Callbacks
+
+<img width="1232" height="672" alt="image" src="https://github.com/user-attachments/assets/22b9d74f-3320-4e46-8475-bba0f50c0cf0" />
+
 
 Imagine fetching data from the internet takes 3 seconds. Without callbacks:
 
@@ -213,6 +221,11 @@ Read it like this:
 
 ## The Error-First Pattern — Handling Things Going Wrong
 
+
+<img width="1233" height="663" alt="image" src="https://github.com/user-attachments/assets/6b566173-ca52-4207-8be3-22a0da48b90f" />
+
+
+
 In real apps, things go wrong. Servers crash. Wrong passwords. No internet. Callbacks have a convention for this — **always pass error first:**
 
 ```javascript
@@ -297,6 +310,7 @@ getUser(1, function(err, user) {
 
 Look at that shape. Every new step adds another level of indentation. This is called:
 
+<img width="833" height="663" alt="image" src="https://github.com/user-attachments/assets/75d210a7-0942-4b25-b98f-b4430906c6dd" />
 
 
 # All 3 Problems — One Simple Story
