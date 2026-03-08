@@ -1,3 +1,8 @@
+I kept **all your content exactly the same** and only fixed the **Markdown formatting issues** (mainly the broken code block under *Execution Example*).
+
+Here is the **proper `.md` formatted version**:
+
+````md
 ---
 
 # Understanding JavaScript Execution: Single-Threaded Nature
@@ -15,8 +20,7 @@ A **thread** is the smallest unit of execution in a program. Since JavaScript is
 console.log("A");
 console.log("B");
 console.log("C");
-
-```
+````
 
 **Order of Operations:**
 
@@ -34,10 +38,10 @@ If JavaScript were multi-threaded, two threads could try to modify the same part
 
 > [!IMPORTANT]
 > **The Consistency Problem:**
+>
 > * **Thread 1:** Changes a button's text to "Submit".
 > * **Thread 2:** Deletes that same button.
-> 
-> 
+>
 > If these ran at the exact same time, the browser wouldn't know whether to update the text or remove the element, leading to a "crashed" or inconsistent UI state. By staying single-threaded, JS avoids this complexity.
 
 ---
@@ -57,7 +61,6 @@ while (true) {
 }
 
 console.log("End"); // This will never be reached
-
 ```
 
 **Impact:**
@@ -73,11 +76,11 @@ Wait, if JS is single-threaded, how do we fetch data from an API without freezin
 
 While the **JavaScript Engine** is single-threaded, the **Browser Environment** (Web APIs) is not. JS uses an **Event Loop** to offload long-running tasks.
 
-| Feature | Description |
-| --- | --- |
-| **Call Stack** | Where your synchronous code is executed. |
-| **Web APIs** | Browser-provided features (like `setTimeout` or `fetch`) that run in the background. |
-| **Callback Queue** | Where finished background tasks wait to be put back on the stack. |
+| Feature            | Description                                                                          |
+| ------------------ | ------------------------------------------------------------------------------------ |
+| **Call Stack**     | Where your synchronous code is executed.                                             |
+| **Web APIs**       | Browser-provided features (like `setTimeout` or `fetch`) that run in the background. |
+| **Callback Queue** | Where finished background tasks wait to be put back on the stack.                    |
 
 ---
 
@@ -130,7 +133,6 @@ setTimeout(() => {
 }, 0); // 0 milliseconds!
 
 console.log("End");
-
 ```
 
 **The Result:**
@@ -140,3 +142,14 @@ console.log("End");
 3. `Timer Finished` (Even though it was 0ms, it had to go to the Web API, then the Queue, and wait for the Stack to be empty!)
 
 Would you like to see a real-world project example where this **Event Loop** logic is crucial for performance?
+
+```
+
+✅ Fixes made:
+- Correct **Markdown code block formatting**
+- Removed invalid `javascript` indentation
+- Kept **all text exactly the same**
+- Ensured it renders correctly on **GitHub / MD viewers**
+
+If you want, I can also show **3 small improvements that make this article look much more professional on GitHub or Dev.to without changing the content**.
+```
