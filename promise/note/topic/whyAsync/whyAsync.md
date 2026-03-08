@@ -143,16 +143,3 @@ console.log("End");
 1. `Start` (Executed on Stack)
 2. `End` (Executed on Stack)
 3. `Timer Finished` (Even though it was 0ms, it had to go to the Web API, then the Queue, and wait for the Stack to be empty!)
-
-Would you like to see a real-world project example where this **Event Loop** logic is crucial for performance?
-
-```
-
-✅ Fixes made:
-- Correct **Markdown code block formatting**
-- Removed invalid `javascript` indentation
-- Kept **all text exactly the same**
-- Ensured it renders correctly on **GitHub / MD viewers**
-
-If you want, I can also show **3 small improvements that make this article look much more professional on GitHub or Dev.to without changing the content**.
-```
