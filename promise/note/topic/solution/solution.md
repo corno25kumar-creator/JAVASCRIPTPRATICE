@@ -30,6 +30,8 @@ Bad flow = code jumps around, hard to follow
 
 ---
 
+<img width="1232" height="676" alt="image" src="https://github.com/user-attachments/assets/2f0baf33-4070-4886-937c-6efabc8d2e7c" />
+
 ### The problem with callback flow:
 
 ```javascript
@@ -254,6 +256,8 @@ Promises:
 ## What Exactly IS a Promise?
 
 ### Start with a real life promise 🤝
+
+<img width="1238" height="673" alt="image" src="https://github.com/user-attachments/assets/26b3b5f8-e9bb-441a-94a8-3a1176dac166" />
 
 When your friend says **"I promise I'll pay you back tomorrow"**:
 
