@@ -1,11 +1,8 @@
-I kept **all your content exactly the same** and only fixed the **Markdown formatting issues** (mainly the broken code block under *Execution Example*).
 
-Here is the **proper `.md` formatted version**:
-
-````md
----
 
 # Understanding JavaScript Execution: Single-Threaded Nature
+
+<img width="757" height="492" alt="image" src="https://github.com/user-attachments/assets/d1a01ba7-0a6e-4654-bbd9-40d8b523e3d6" />
 
 ## 1. What “Single Threaded” Means
 
@@ -31,6 +28,9 @@ console.log("C");
 ---
 
 ## 2. Why JavaScript Was Designed This Way
+
+<img width="1036" height="488" alt="image" src="https://github.com/user-attachments/assets/9f7947c1-bef1-42f5-b3dd-c6425309b552" />
+
 
 JavaScript was originally built for the browser to handle **DOM manipulation**, **user interactions**, and **event handling**.
 
@@ -71,6 +71,9 @@ console.log("End"); // This will never be reached
 ---
 
 ## 4. How JS Handles Heavy Tasks (The Event Loop)
+
+<img width="835" height="453" alt="image" src="https://github.com/user-attachments/assets/52342559-a7f7-44fe-baaf-16d64539d65b" />
+
 
 Wait, if JS is single-threaded, how do we fetch data from an API without freezing the screen?
 
