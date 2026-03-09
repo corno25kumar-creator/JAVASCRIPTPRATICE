@@ -263,20 +263,43 @@ print_Count(count, run_Three_Time)
 //question 14
 console.log(`======================================================`)
 
-function User (name ,cb){
-   cb(name, cb())
+function getUser(id , cb){
+setTimeout(()=>{
+    const user = {id:1, name:'sam'}
+    cb(null, user)
+}, 1000)
 }
 
-function Order (name, cb) {
-   cb (name , cb())
+function getOrder(userId, cb){
+    setTimeout(()=>{
+        const order = {id:101, item:"pizza", userId}
+        cb(null, order)
+    }, 1000)
 }
 
-function status (name  , status_d){
-    return {
-        user:name,
-        Order: Order_item,
-        status: status_d
-    }
+function getStatus(orderId, cb){
+    setTimeout(()=>{
+       const status = {orderId, status:"done"}
+       cb(null, status)
+    }, 1000)
 }
 
-User('sam', Order('sam', status('sam', 'pizza', 'Delivered')))
+getUser(1, function(err, user){
+    getOrder(user.id, function(err, order){
+        getStatus(order.id, function(err, status){
+            console.log("user:-", user.name)
+            console.log("Order:-", order.id)
+            console.log("Status:-", status.status)
+        })
+    })
+})
+
+//question 16
+console.log(`======================================================`)
+function greet(name, callback) {
+    console.log("Hello " + name);
+    callback();
+}
+greet("Chandan", function() {
+    console.log("Done!");
+});
