@@ -1,0 +1,12 @@
+{
+  "name": "async_await",
+  "version": "1.0.0",
+  "main": "async_await.js",
+  "scripts": {
+     "dev": "node --watch src/asyncAwait.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
