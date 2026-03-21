@@ -1,0 +1,44 @@
+# 🔹 Node modules
+node_modules/
+
+# 🔹 Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 🔹 Environment variables (IMPORTANT)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 🔹 OS files
+.DS_Store
+Thumbs.db
+
+# 🔹 IDE / Editor
+.vscode/
+.idea/
+
+# 🔹 Build output
+dist/
+build/
+
+# 🔹 Coverage
+coverage/
+
+# 🔹 Temporary files
+.tmp/
+.temp/
+
+# 🔹 Cache
+.cache/
+
+# 🔹 Package lock (optional - usually keep it)
+# package-lock.json
+
+# 🔹 TypeScript (if you add later)
+*.tsbuildinfo
